@@ -19,8 +19,6 @@ class ParallaxCell: UITableViewCell {
    
         super.awakeFromNib()
         //set up paralax code later
-
-       
     }
 
     func configureCell(withImage image:UIImage,andDescription desc:String){
@@ -28,14 +26,7 @@ class ParallaxCell: UITableViewCell {
         descrpitionLable.text = desc
     }
     
-    
-    
-    
     func setupParallax(){
-        
-        
-        
-        
     }
 
 

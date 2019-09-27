@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE4974EB233E7A3F00C0B485 /* MainV2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4974EA233E7A3F00C0B485 /* MainV2.storyboard */; };
 		FEE58D67233E541E000775DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE58D66233E541E000775DC /* AppDelegate.swift */; };
 		FEE58D69233E541E000775DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE58D68233E541E000775DC /* SceneDelegate.swift */; };
 		FEE58D6B233E541E000775DC /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE58D6A233E541E000775DC /* ListTableViewController.swift */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE4974EA233E7A3F00C0B485 /* MainV2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainV2.storyboard; sourceTree = "<group>"; };
 		FEE58D63233E541E000775DC /* accelerometron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accelerometron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE58D66233E541E000775DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE58D68233E541E000775DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				FEE58D66233E541E000775DC /* AppDelegate.swift */,
 				FEE58D68233E541E000775DC /* SceneDelegate.swift */,
 				FEE58D6C233E541E000775DC /* Main.storyboard */,
-				FE4974EA233E7A3F00C0B485 /* MainV2.storyboard */,
 				FEE58D6F233E541F000775DC /* Assets.xcassets */,
 				FEE58D71233E541F000775DC /* LaunchScreen.storyboard */,
 				FEE58D74233E541F000775DC /* Info.plist */,
@@ -151,7 +148,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE58D73233E541F000775DC /* LaunchScreen.storyboard in Resources */,
-				FE4974EB233E7A3F00C0B485 /* MainV2.storyboard in Resources */,
 				FEE58D70233E541F000775DC /* Assets.xcassets in Resources */,
 				FEE58D6E233E541E000775DC /* Main.storyboard in Resources */,
 			);
