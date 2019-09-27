@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE4974EB233E7A3F00C0B485 /* MainV2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4974EA233E7A3F00C0B485 /* MainV2.storyboard */; };
 		FEE58D67233E541E000775DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE58D66233E541E000775DC /* AppDelegate.swift */; };
 		FEE58D69233E541E000775DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE58D68233E541E000775DC /* SceneDelegate.swift */; };
-		FEE58D6B233E541E000775DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE58D6A233E541E000775DC /* ViewController.swift */; };
+		FEE58D6B233E541E000775DC /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE58D6A233E541E000775DC /* ListTableViewController.swift */; };
 		FEE58D6E233E541E000775DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE58D6C233E541E000775DC /* Main.storyboard */; };
 		FEE58D70233E541F000775DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE58D6F233E541F000775DC /* Assets.xcassets */; };
 		FEE58D73233E541F000775DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE58D71233E541F000775DC /* LaunchScreen.storyboard */; };
+		FEE58D7C233E5CDF000775DC /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE58D7B233E5CDF000775DC /* ParallaxCell.swift */; };
+		FEE58D7E233E651F000775DC /* images+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE58D7D233E651F000775DC /* images+Names.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE4974EA233E7A3F00C0B485 /* MainV2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainV2.storyboard; sourceTree = "<group>"; };
 		FEE58D63233E541E000775DC /* accelerometron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accelerometron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE58D66233E541E000775DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE58D68233E541E000775DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEE58D6A233E541E000775DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEE58D6A233E541E000775DC /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		FEE58D6D233E541E000775DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEE58D6F233E541F000775DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEE58D72233E541F000775DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEE58D74233E541F000775DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE58D7B233E5CDF000775DC /* ParallaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
+		FEE58D7D233E651F000775DC /* images+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "images+Names.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE23E548233E75EC004BAD69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEE58D6A233E541E000775DC /* ListTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FEE58D5A233E541E000775DC = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +70,26 @@
 		FEE58D65233E541E000775DC /* accelerometron */ = {
 			isa = PBXGroup;
 			children = (
+				FE23E548233E75EC004BAD69 /* Controller */,
+				FEE58D7A233E5CA9000775DC /* View */,
 				FEE58D66233E541E000775DC /* AppDelegate.swift */,
 				FEE58D68233E541E000775DC /* SceneDelegate.swift */,
-				FEE58D6A233E541E000775DC /* ViewController.swift */,
 				FEE58D6C233E541E000775DC /* Main.storyboard */,
+				FE4974EA233E7A3F00C0B485 /* MainV2.storyboard */,
 				FEE58D6F233E541F000775DC /* Assets.xcassets */,
 				FEE58D71233E541F000775DC /* LaunchScreen.storyboard */,
 				FEE58D74233E541F000775DC /* Info.plist */,
+				FEE58D7D233E651F000775DC /* images+Names.swift */,
 			);
 			path = accelerometron;
+			sourceTree = "<group>";
+		};
+		FEE58D7A233E5CA9000775DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEE58D7B233E5CDF000775DC /* ParallaxCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE58D73233E541F000775DC /* LaunchScreen.storyboard in Resources */,
+				FE4974EB233E7A3F00C0B485 /* MainV2.storyboard in Resources */,
 				FEE58D70233E541F000775DC /* Assets.xcassets in Resources */,
 				FEE58D6E233E541E000775DC /* Main.storyboard in Resources */,
 			);
@@ -138,8 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEE58D6B233E541E000775DC /* ViewController.swift in Sources */,
+				FEE58D6B233E541E000775DC /* ListTableViewController.swift in Sources */,
 				FEE58D67233E541E000775DC /* AppDelegate.swift in Sources */,
+				FEE58D7C233E5CDF000775DC /* ParallaxCell.swift in Sources */,
+				FEE58D7E233E651F000775DC /* images+Names.swift in Sources */,
 				FEE58D69233E541E000775DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cinderella.accelerometron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cinderella.accelerometron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
