@@ -7,16 +7,37 @@
 //
 
 import UIKit
+import CoreMotion
 
 class MyViewController: UITableViewController {
 
+    var motionManager:CMMotionManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
    
         tableView.delegate=self
         tableView.dataSource=self
+        
+        motionManager=CMMotionManager()
+        motionManager.startAccelerometerUpdates(to: .main, withHandler:updateXYZ)
+        
     }
 
+    func updateXYZ(data:CMAccelerometerData?,error:Error?){
+        guard let accelerometerData=data else {return}
+        
+        let formatter=NumberFormatter()
+        formatter.minimumFractionDigits=1
+        formatter.maximumFractionDigits=1
+        
+        let x = formatter.string(for:accelerometerData.acceleration.x)!
+        let y = formatter.string(for:accelerometerData.acceleration.y)!
+        let z = formatter.string(for:accelerometerData.acceleration.z)!
+        
+        print("\(x) \(y) \(z)")
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
